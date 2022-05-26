@@ -1,0 +1,100 @@
+.headerSearch {
+    height: 30px;
+    background-color: #fff;
+    border: 3px solid #febb02;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px 0px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: -25px;
+    width: 100%;
+    max-width: 1024px;
+    z-index: 2;
+}
+
+.headerIcon {
+    color: lightgray;
+}
+
+.headerSearchBtn {
+    padding: 5px 20px;
+    border: none;
+    background-color: rgb(47, 194, 60);
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.headerSearchBtn:hover {
+    background-color: darkviolet;
+    transform: scale(1.2);
+}
+
+.headerSearchItem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.headerSearchInput {
+    border: none;
+    outline: none;
+}
+
+.headerSearchText {
+    color: lightgray;
+    cursor: pointer;
+}
+
+.date {
+    position: absolute;
+    top: 40px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+}
+
+.options {
+    position: absolute;
+    top: 50px;
+    background-color: white;
+    color: gray;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+}
+
+.optionItem {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.optionCounter {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.2rem;
+    color: black;
+}
+
+.OptionCounterButton {
+    width: 25px;
+    height: 25px;
+    border: none;
+    background-color: #febb02;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.OptionCounterButton:hover {
+    background-color: rgb(47, 194, 60);
+    transform: scale(1.1);
+}

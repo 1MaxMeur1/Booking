@@ -1,0 +1,105 @@
+.reserve {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.418);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rContainer {
+    background-color: white;
+    padding: 20px;
+    position: relative;
+    border-radius: 10px;
+}
+
+.rClose {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: red;
+}
+
+.rClose:hover {
+    transform: scale(1.2);
+}
+
+.rItem {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 20px;
+}
+
+.rInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.rTitle {
+    font-weight: 500;
+}
+
+.rDesc {
+    font-weight: 300;
+}
+
+.rMax {
+    font-size: 12px;
+}
+
+.rPrice {
+    font-weight: 500;
+}
+
+.rSelectRooms {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    font-size: 10px;
+    color: grey;
+}
+
+.room {
+    display: flex;
+    flex-direction: column;
+}
+
+.rButton {
+    background-color: rgb(47, 194, 60);
+    padding: 5px 10px;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: .5s;
+    width: 100%;
+}
+
+.rButton:hover {
+    transform: scale(1.05);
+}
+
+
+.room input[type="checkbox"] {
+    width: 1.15em;
+    height: 1.15em;
+    border: 0.15em solid rgb(84, 206, 72);
+    border-radius: 0.15em;
+    cursor: pointer;
+}
+
+.room input[type="checkbox"]:disabled {
+    width: 0.95em;
+    height: 0.95em;
+    cursor: default;
+}

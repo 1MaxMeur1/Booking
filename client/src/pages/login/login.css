@@ -1,0 +1,53 @@
+.login {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: brown;
+}
+
+.loginInput {
+    margin-bottom: 15px;
+}
+
+.login input {
+    padding: 10px;
+    border-radius: 15px;
+    outline: none;
+    border: 2px solid gray;
+    width: 300px;
+}
+
+.login input:hover {
+    transform: scale(1.1);
+}
+
+.lButton {
+    padding: 10px;
+    cursor: pointer;
+    border: 1px solid gray;
+    width: 100px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    background-color: chartreuse;
+    color: black;
+    font-size: 1.2rem;
+}
+
+.lButton:hover {
+    transform: scale(1.2);
+    border-radius: 10px;
+}
+
+.login span {
+    font-size: 1.2rem;
+    color: white;
+}
+
+.login h1 {
+    margin-bottom: 30px;
+    font-size: 2.3rem;
+    color: white;
+}

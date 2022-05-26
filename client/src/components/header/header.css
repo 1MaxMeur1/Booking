@@ -1,0 +1,58 @@
+.header {
+    background-color: darkviolet;
+    color: white;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.headerContainer {
+    width: 100%;
+    max-width: 1024px;
+    margin: 20px 0px 100px 0px;
+}
+
+.headerContainer.listMode{
+    margin: 20px 0 0 0;
+}
+
+.headerList {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+.headerListItem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.1rem;
+}
+.headerListItem.active {
+    color: white;
+    background-color: rgb(47, 194, 60);
+    padding: 10px 15px;
+    font-weight: 700;
+    border-radius: 15px;
+    border: 2px solid thin;
+    box-shadow: 3px 3px yellow;
+}
+
+
+.headerDesc {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.headerBtn {
+    border: none;
+    padding: 10px 15px;
+    border-radius: 15px;
+    color: darkviolet;
+    font-weight: 600;
+}
+
+.headerBtn:hover {
+    background-color: rgb(47, 194, 60);
+    color: white;
+    cursor: pointer;
+}
