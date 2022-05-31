@@ -1,0 +1,92 @@
+.datatable {
+    height: 700px;
+    padding: 20px;
+
+    .datatableTitle {
+        width: 100%;
+        font-size: 24px;
+        color: gray;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .link {
+            text-decoration: none;
+            color: rgb(57, 216, 91);
+            font-size: 16px;
+            font-weight: 400;
+            border: 1px solid rgb(57, 216, 91);
+            padding: 5px 15px;
+            border-radius: 15px;
+            transition: .4s;
+            &:hover {
+                color: white;
+                transform: scale(1.1);
+                background-color: rgb(57, 216, 91);
+            }
+        }
+    }
+
+    .cellWithImg {
+        display: flex;
+        align-items: center;
+
+        .cellImg {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 20px;
+        }
+    }
+
+    .cellWithStatus {
+        padding: 5px;
+        border-radius: 5px;
+
+        &.active {
+            background-color: rgba(0, 128, 0, 0.05);
+            color: rgb(57, 216, 91);
+        }
+        &.pending {
+            background-color: rgba(0, 128, 0, 0.05);
+            color: orange;
+        }
+        &.passive {
+            background-color: rgba(0, 128, 0, 0.05);
+            color: red;
+        }
+    }
+    .cellAction {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+
+        .viewButton {
+            padding: 2px 5px;
+            border-radius: 5px;
+            color: indigo;
+            border: 1px dotted rgb(192, 155, 219);
+            cursor: pointer;
+            &:hover {
+                background-color: indigo;
+                color: white;
+                transform: scale(1.1);
+            }
+        }
+
+        .deleteButton {
+            padding: 2px 5px;
+            border-radius: 5px;
+            color: crimson;
+            border: 1px dotted rgb(211, 96, 119);
+            cursor: pointer;
+            &:hover {
+                background-color: crimson;
+                color: white;
+                transform: scale(1.1);
+            }
+        }
+    }
+}

@@ -1,0 +1,42 @@
+.table {
+    .cellWrapper {
+        display: flex;
+        align-items: center;
+
+        .image {
+            width: 32px;
+            height: 32px;
+            margin-right: 10px;
+            object-fit: cover;
+        }
+    }
+
+    .status {
+        &.Pending {
+            color: orange;
+        }
+        &.Success {
+            color: rgb(57, 216, 91);
+        }
+        &.Failure {
+            color: red;
+        }
+    }
+
+    .method {
+        display: flex;
+        align-items: center;
+        .circle {
+            margin-left: 5px;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            &.Online {
+                background-color: rgb(57, 216, 91);
+            }
+            &.Offline {
+                background-color: red;
+            }
+        }
+    }
+}

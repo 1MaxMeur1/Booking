@@ -1,0 +1,82 @@
+.sidebar {
+    flex: 1;
+    border-right: 1px solid lightgray;
+    min-height: 100vh;
+    background-color: indigo;
+    .top {
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-bottom: 1px solid lightgray;
+
+        .logo {
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: rgb(19, 231, 185);
+        }
+    }
+
+    .center {
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        color: white;
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            .title {
+                font-size: 12px;
+                font-weight: bold;
+                color: #999;
+                margin-bottom: 5px;
+            }
+            li {
+                font-size: 15px;
+                margin-bottom: 15px;
+                display: flex;
+                align-items: center;
+                span {
+                    margin-left: 10px;
+                    font-weight: 100;
+                }
+                .icon {
+                    transition: .6s;
+                }
+                &:hover {
+                    .icon {
+                        color: aquamarine;
+                        transform: scale(1.2);
+                    }
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    .bottom {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px;
+
+        .colorOption {
+            width: 25px;
+            height: 25px;
+            border-radius: 5px;
+            margin: 5px;
+            border: 1px solid rosybrown;
+            cursor: pointer;
+            transition: .5s;
+            &:hover {
+                transform: scale(1.2);
+            }
+            &:nth-child(1) {
+                background-color: white;
+            }
+            &:nth-child(2) {
+                background-color: rgba(0, 0, 0, 0.493);
+            }
+        }
+    }
+}
